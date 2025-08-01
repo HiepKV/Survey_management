@@ -1,0 +1,11 @@
+<?php
+namespace App\Repositories\Contracts;
+use Illuminate\Http\Request;
+interface CompanyRepositoryInterface
+{
+    public function index(Request $request);
+    public function find(int $id);
+    public function store(array $data);
+    public function update(int $id, array $data);
+    public function delete(int $id);
+}
